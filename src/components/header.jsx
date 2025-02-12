@@ -72,10 +72,20 @@ export const Header = ({ data }) => {
   };
   const lineVariants = {
     animate: {
-      y: ["-100%", "100%"],
+      y: ["-100%", "100vh"],
       transition: {
         repeat: Infinity,
-        duration: 2, // Duration for each loop
+        duration: 8, // Duration for each loop
+        ease: "linear", // Smooth animation
+      },
+    },
+  };
+  const lineVariants1 = {
+    animate: {
+      y: ["-100%", "100vh"],
+      transition: {
+        repeat: Infinity,
+        duration: 10, // Duration for each loop
         ease: "linear", // Smooth animation
       },
     },
@@ -130,25 +140,25 @@ export const Header = ({ data }) => {
                 style={{
                   position: "absolute",
 
-                  bottom: 0, // Start from the bottom
+                  top: 0, // Start from the bottom
                   left: "5%", // Center horizontally
                   width: "1px", // Vertical line width
-                  height: "100%",
+                  height: "30px",
                   backgroundColor: "#5ca9fb", // Line color
                   zIndex: 2,
                 }}
               />
               <motion.div
                 className="animated-line"
-                variants={lineVariants}
+                variants={lineVariants1}
                 animate="animate"
                 style={{
                   position: "absolute",
 
-                  bottom: 0, // Start from the bottom
+                  top: 0, // Start from the bottom
                   left: "10%", // Center horizontally
                   width: "1px", // Vertical line width
-                  height: "100%",
+                  height: "30px",
                   backgroundColor: "#5ca9fb", // Line color
                   zIndex: 2,
                 }}
