@@ -258,10 +258,167 @@ header .intro-text {
   text-align: center;
 }
 /* Features Section */
+
+/* تحسين قسم Features */
 #features {
-  background: #f6f6f6;
+  background-color: #f9f9f9;
+  padding: 60px 0;
+  text-align: center;
 }
+/* #features .section-title {
+  text-align: center; 
+}  */
+
+/* عنوان Features */
+#features .section-title h2 {
+  color: #333;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+/* شريط صغير أسفل العنوان */
+#features .section-title h2::after {
+  content: "";
+  display: block;
+  width: 60px; /* عرض الشريط */
+  height: 4px; /* ارتفاع الشريط */
+  background-color: #5ca9fb;
+  margin: 10px 0px 0px -30px; /* توسيط الشريط */
+  border-radius: 2px;
+}
+
+/* تحسين المسافات للكروت */
+.feature-card {
+  margin-top: -20px; /* تقليل المسافة بين العنوان والكروت */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card i {
+  font-size: 40px;
+  color: #5ca9fb;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.feature-card p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* #features {
+  background-color: #f9f9f9; 
+  padding: 60px 0;
+  text-align: center;
+}
+
+#features .section-title h2 {
+  color: #333;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+#features .section-title h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #5ca9fb; 
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
 #features i.fa {
+  font-size: 38px;
+  margin-bottom: 20px;
+  transition: all 0.5s ease-in-out;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  padding: 30px 0;
+  border-radius: 50%;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+#features i.fa:hover {
+  transform: scale(1.2); 
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+#features h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#features p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+
+.feature-card {
+  border: 1px solid #ddd; 
+  border-radius: 10px; 
+  padding: 20px;
+  background-color: #fff; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+}
+
+.feature-card i.fa {
+  margin-bottom: 15px;
+  width: 80px;
+  height: 80px;
+  font-size: 32px;
+  padding: 25px 0;
+}
+
+.feature-card h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+
+.feature-card p {
+  color: #777;
+  font-size: 14px;
+} */
+/* old css features */
+/* #features {
+  background: #f6f6f6;
+  
+} */
+/* #features i.fa {
   font-size: 38px;
   margin-bottom: 20px;
   transition: all 0.5s;
@@ -272,7 +429,8 @@ header .intro-text {
   border-radius: 50%;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
-}
+} */
+
 /* About Section */
 #about {
   padding: 100px 0;
