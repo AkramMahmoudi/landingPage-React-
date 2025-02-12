@@ -228,7 +228,7 @@ a:focus,
   text-align: center; */
 }
 .intro .overlay {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.5);
   width: 100%;
 }
 .intro h1 {
