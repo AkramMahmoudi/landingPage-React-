@@ -145,6 +145,10 @@ export const Header = ({ data }) => {
                   width: "1px", // Vertical line width
                   height: "30px",
                   backgroundColor: "#5ca9fb", // Line color
+                  // background: "linear-gradient(180deg, #5ca9fb, #ff6f61)", // تدرج لوني
+                  boxShadow: "0px 0px 10px 2px rgba(92, 169, 251, 0.7)", // تأثير التوهج
+                  borderRadius: "5px",
+
                   zIndex: 2,
                 }}
               />
@@ -160,6 +164,8 @@ export const Header = ({ data }) => {
                   width: "1px", // Vertical line width
                   height: "30px",
                   backgroundColor: "#5ca9fb", // Line color
+                  boxShadow: "0px 0px 10px 2px rgba(92, 169, 251, 0.7)", // تأثير التوهج
+                  borderRadius: "5px",
                   zIndex: 2,
                 }}
               />
@@ -179,6 +185,8 @@ export const Header = ({ data }) => {
                   width: "1px", // Vertical line width
                   height: "30px",
                   backgroundColor: "#5ca9fb", // Line color
+                  boxShadow: "0px 0px 10px 2px rgba(92, 169, 251, 0.7)", // تأثير التوهج
+                  borderRadius: "5px",
                   zIndex: 2,
                 }}
               />
@@ -197,6 +205,8 @@ export const Header = ({ data }) => {
                   width: "1px", // Vertical line width
                   height: "30px",
                   backgroundColor: "#5ca9fb", // Line color
+                  boxShadow: "0px 0px 10px 2px rgba(92, 169, 251, 0.7)", // تأثير التوهج
+                  borderRadius: "5px",
                   zIndex: 2,
                 }}
               />
