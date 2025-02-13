@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
+import { RainEffect } from "./raineffect";
 
 export const Header = ({ data }) => {
   const textVariants = {
@@ -71,15 +72,19 @@ export const Header = ({ data }) => {
             <div
               className="intro"
               style={{
+                position: "relative", //new style
                 backgroundImage: `url(${img})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 height: "100vh",
               }}
             >
+              {/* raineffect */}
+              <RainEffect />
+
               {/* Animated Line */}
               {/* left */}
-              <motion.div
+              {/* <motion.div
                 className="animated-line"
                 variants={lineVariants}
                 animate="animate"
@@ -97,8 +102,8 @@ export const Header = ({ data }) => {
 
                   zIndex: 2,
                 }}
-              />
-              <motion.div
+              /> */}
+              {/* <motion.div
                 className="animated-line"
                 variants={lineVariants1}
                 animate="animate"
@@ -114,9 +119,9 @@ export const Header = ({ data }) => {
                   borderRadius: "5px",
                   zIndex: 2,
                 }}
-              />
+              /> */}
               {/* right */}
-              <motion.div
+              {/* <motion.div
                 className="animated-line"
                 variants={lineVariants2}
                 animate="animate"
@@ -135,8 +140,8 @@ export const Header = ({ data }) => {
                   borderRadius: "5px",
                   zIndex: 2,
                 }}
-              />
-              <motion.div
+              /> */}
+              {/* <motion.div
                 className="animated-line"
                 variants={lineVariants3}
                 animate="animate"
@@ -155,7 +160,7 @@ export const Header = ({ data }) => {
                   borderRadius: "5px",
                   zIndex: 2,
                 }}
-              />
+              /> */}
               <div className="overlay">
                 <div className="container">
                   <div className="row">
