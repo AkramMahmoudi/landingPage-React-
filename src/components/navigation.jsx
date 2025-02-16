@@ -1,6 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export const Navigation = (props) => {
+  const handleScroll = () => {
+    const navbar = document.getElementById("menu");
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">

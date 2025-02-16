@@ -76,10 +76,16 @@ hr {
   padding: 15px;
   transition: all 0.8s;
 }
+
 #menu.navbar-default {
-  background-color: #fff;
-  border-color: rgba(231, 231, 231, 0);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  background-color: transparent; /* Make the background transparent */
+  border-color: transparent; /* Remove border color */
+  box-shadow: none; /* Remove box shadow */
+  transition: background-color 0.8s ease; /* Smooth transition for background color */
+}
+#menu.navbar-default.scrolled {
+  background-color: rgba(255, 255, 255, 1); /* Semi-transparent white */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); /* Add shadow when scrolled */
 }
 #menu a.navbar-brand {
   font-family: "Raleway", sans-serif;
@@ -91,12 +97,16 @@ hr {
 #menu.navbar-default .navbar-nav > li > a {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
-  color: #555;
+  color: white;
   font-size: 15px;
   font-weight: 600;
   padding: 8px 2px;
   border-radius: 0;
   margin: 9px 20px 0;
+  transition: color 0.3s ease;
+}
+#menu.navbar-default.scrolled .navbar-nav > li > a {
+  color: #555; /* Original color */
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
   color: #1b61bd;
