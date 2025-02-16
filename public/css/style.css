@@ -276,7 +276,9 @@ header .intro-text {
   background-color: #f9f9f9;
   padding: 60px 0;
   text-align: center;
+  height: 100vh;
 }
+
 /* #features .section-title {
   text-align: center; 
 }  */
@@ -485,6 +487,7 @@ header .intro-text {
 /* General Container */
 #Services2 {
   padding: 3rem 0;
+  height: 100vh;
 }
 
 /*  */
@@ -537,9 +540,12 @@ header .intro-text {
 }
 /* section3 */
 /* Container */
+#Section3 {
+  height: 100vh;
+}
 .container3 {
   margin: 0 auto;
-  padding: 48px 16px;
+  padding: 0px 16px;
   max-width: 1280px;
 }
 
