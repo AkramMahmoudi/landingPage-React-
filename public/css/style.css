@@ -949,6 +949,7 @@ label {
 } */
 /* Footer base styles */
 .footer {
+  /* height: 60vh; */
   background-color: #333;
   color: #ddd;
   padding: 40px 20px;
@@ -958,7 +959,7 @@ label {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  max-width: 1200px;
+  max-width: 1536px;
   margin: 0 auto;
 }
 .footer-h2 {
@@ -1072,7 +1073,36 @@ label {
   .footer-container {
     grid-template-columns: 1fr;
   }
-
+  .brand {
+    padding: 20px;
+  }
+  .footer-section {
+    /* padding-top: 20px; */
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+  }
+  .first-c {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* column-gap: 15px; */
+  }
+  .footer-desc {
+    /* background-color: red; */
+    text-align: center;
+  }
+  .useful-links ul li {
+    text-align: center;
+  }
+  .newsletter p {
+    text-align: center;
+  }
   .newsletter-form {
     flex-direction: column;
   }

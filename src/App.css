@@ -9,7 +9,8 @@
   #team,
   #contact,
   #footer,
-  #header {
+  #header,
+  .footer {
     width: 110%;
   }
 
