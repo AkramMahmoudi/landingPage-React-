@@ -688,7 +688,7 @@ header .intro-text {
   display: flex;
   align-items: center; /* Vertically center */
   justify-content: space-between;
-
+  flex-wrap: wrap;
   margin-bottom: 32px; /* Space below the header */
 }
 
@@ -764,7 +764,7 @@ header .intro-text {
 
 .card3 img {
   width: 100%;
-  height: 192px;
+  height: auto;
   object-fit: cover;
   transition: transform 0.3s ease; /* Smooth image scaling */
 }
@@ -789,6 +789,48 @@ header .intro-text {
 
 .card3:hover .card-title {
   color: #007bff; /* Change title color on hover */
+}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  #Section3 {
+    height: auto;
+    margin-top: 30px;
+  }
+  .container3 {
+    /* background-color: red; */
+    margin: 0;
+    padding: 0px 16px;
+    max-width: 1280px;
+  }
+  .title3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .button3 {
+    /* margin-right: auto;
+    margin-left: auto; */
+    font-size: 20px;
+    padding: 6px 16px;
+    /* display: none; */
+  }
+
+  .grid {
+    /* background-color: red; */
+    grid-template-columns: 1fr; /* One column layout on small screens */
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    /* background-color: orange; */
+    /* justify-content: center; */
+  }
+
+  .header-container .button3 {
+    /* align-self: center; Align the button to the right on mobile */
+    margin-top: 16px;
+  }
 }
 /* Services Section */
 #services {
