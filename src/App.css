@@ -10,7 +10,8 @@
   #contact,
   #footer,
   #header,
-  .footer {
+  .footer,
+  #Services2 {
     width: 110%;
   }
 
