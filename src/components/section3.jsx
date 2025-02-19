@@ -109,36 +109,21 @@ export const Section3 = () => {
         <div className="grid">
           {/* البطاقة الأولى */}
           <div className="card3">
-            <img
-              src="/img/slide_sud_etanche_3.jpg"
-              alt="Roof Installation"
-              width={"100px"}
-              height={"100px"}
-            />
+            <img src="/img/slide_sud_etanche_3.jpg" alt="Roof Installation" />
             <div className="card-content">
               <h3 className="card-title">Roof Installation</h3>
             </div>
           </div>
           {/* البطاقة الثانية */}
           <div className="card3">
-            <img
-              src="/img/slide_sud_etanche_3.jpg"
-              alt="Roof Renovation"
-              width={"100px"}
-              height={"100px"}
-            />
+            <img src="/img/slide_sud_etanche_3.jpg" alt="Roof Renovation" />
             <div className="card-content">
               <h3 className="card-title">Roof Renovation</h3>
             </div>
           </div>
           {/* البطاقة الثالثة */}
           <div className="card3">
-            <img
-              src="/img/slide_sud_etanche_3.jpg"
-              alt="Roof Survey"
-              width={"250px"}
-              height={"250px"}
-            />
+            <img src="/img/slide_sud_etanche_3.jpg" alt="Roof Survey" />
             <div className="card-content">
               <h3 className="card-title">Roof Survey</h3>
             </div>
@@ -148,8 +133,6 @@ export const Section3 = () => {
             <img
               src="/img/the-roof-is-covered-with-bituminous-shingles-of-br-2022-11-14-16-05-23-utc.jpg"
               alt="Commercial Roofing"
-              width={"250px"}
-              height={"250px"}
             />
             <div className="card-content">
               <h3 className="card-title">Commercial Roofing</h3>
@@ -160,8 +143,6 @@ export const Section3 = () => {
             <img
               src="/img/the-roof-is-covered-with-bituminous-shingles-of-br-2022-11-14-16-05-23-utc.jpg"
               alt="Residential Roofing"
-              width={"250px"}
-              height={"250px"}
             />
             <div className="card-content">
               <h3 className="card-title">Residential Roofing</h3>
@@ -172,8 +153,15 @@ export const Section3 = () => {
             <img
               src="/img/the-roof-is-covered-with-bituminous-shingles-of-br-2022-11-14-16-05-23-utc.jpg"
               alt="Roof Repair"
-              width={"250px"}
-              height={"250px"}
+            />
+            <div className="card-content">
+              <h3 className="card-title">Roof Repair</h3>
+            </div>
+          </div>
+          <div className="card3">
+            <img
+              src="/img/the-roof-is-covered-with-bituminous-shingles-of-br-2022-11-14-16-05-23-utc.jpg"
+              alt="Roof Repair"
             />
             <div className="card-content">
               <h3 className="card-title">Roof Repair</h3>
