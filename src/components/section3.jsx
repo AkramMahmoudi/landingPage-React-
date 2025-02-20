@@ -158,7 +158,7 @@ export const Section3 = () => {
               <h3 className="card-title">Roof Repair</h3>
             </div>
           </div>
-          <div className="card3">
+          {/* <div className="card3">
             <img
               src="/img/the-roof-is-covered-with-bituminous-shingles-of-br-2022-11-14-16-05-23-utc.jpg"
               alt="Roof Repair"
@@ -166,7 +166,7 @@ export const Section3 = () => {
             <div className="card-content">
               <h3 className="card-title">Roof Repair</h3>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

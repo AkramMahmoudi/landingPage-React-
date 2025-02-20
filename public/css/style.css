@@ -269,6 +269,37 @@ header .intro-text {
   padding-bottom: 200px;
   text-align: center;
 }
+@media (max-width: 1600px) {
+  header .intro-text {
+    padding-top: 250px;
+    padding-bottom: 200px;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  header .intro-text {
+    padding-top: 250px;
+    padding-bottom: 200px;
+    text-align: center;
+  }
+  .intro p {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+  .intro h1 {
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
 /* Features Section */
 
 /* تحسين قسم Features */
