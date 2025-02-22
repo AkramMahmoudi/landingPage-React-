@@ -1,6 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+
+import "swiper/css";
+// import "swiper/css/scrollbar";
+import "swiper/css/autoplay";
 
 export const Services2 = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <div id="Services2">
       <div className="container">
@@ -136,8 +152,62 @@ export const Services2 = () => {
           </div>
 
           {/* القسم الأيمن للصور */}
-          <div className="col-md-6 ">
-            <div
+          <div className="col-md-6 img-sec">
+            {isMobile ? (
+              <Swiper
+                modules={[Autoplay]}
+                // scrollbar={{ hide: true, draggable: false }}
+                spaceBetween={15}
+                slidesPerView={1.3}
+                autoplay={{
+                  delay: 3000, // التمرير التلقائي بعد 1 ثانية
+                  disableOnInteraction: false, // لا يتوقف التمرير عند التفاعل
+                }}
+                // loop={true}
+                className="mobile-swiper"
+              >
+                <SwiperSlide className="swiperslides2">
+                  <img
+                    className="swiper-image"
+                    src="/img/slide_sud_etanche_3.jpg"
+                    alt=""
+                  />
+                </SwiperSlide>
+                <SwiperSlide className="swiperslides2">
+                  <img
+                    className="swiper-image"
+                    src="/img/etancheite-toit-terrasse-rouleaux-bitumineux.jpg"
+                    alt=""
+                  />
+                </SwiperSlide>
+                <SwiperSlide className="swiperslides2">
+                  <img
+                    className="swiper-image"
+                    src="/img/video_slider1_16.jpeg"
+                    alt=""
+                  />
+                </SwiperSlide>
+              </Swiper>
+            ) : (
+              <div className="d-flex justify-content-between align-items-end imgm">
+                <img
+                  className="fimage"
+                  src="/img/slide_sud_etanche_3.jpg"
+                  alt=""
+                />
+                <img
+                  className="simage"
+                  src="/img/etancheite-toit-terrasse-rouleaux-bitumineux.jpg"
+                  alt=""
+                />
+                <img
+                  className="timage"
+                  src="/img/video_slider1_16.jpeg"
+                  alt=""
+                />
+              </div>
+            )}
+            {/* <div
               className="d-flex justify-content-between align-items-end imgm"
               style={{ height: "auto" }}
             >
@@ -145,39 +215,14 @@ export const Services2 = () => {
                 className="fimage"
                 src="/img/slide_sud_etanche_3.jpg"
                 alt=""
-                // style={{
-                //   height: "250px",
-                //   width: "150px",
-                //   borderRadius: "5px",
-                //   marginRight: "10px",
-                //   marginLeft: "50px",
-                //   objectFit: "cover",
-                // }}
               />
               <img
                 className="simage"
                 src="/img/etancheite-toit-terrasse-rouleaux-bitumineux.jpg"
                 alt=""
-                // style={{
-                //   height: "300px",
-                //   width: "150px",
-                //   borderRadius: "5px",
-                //   marginRight: "10px",
-                //   objectFit: "cover",
-                // }}
               />
-              <img
-                className="timage"
-                src="/img/video_slider1_16.jpeg"
-                alt=""
-                // style={{
-                //   height: "350px",
-                //   width: "150px",
-                //   borderRadius: "5px",
-                //   objectFit: "cover",
-                // }}
-              />
-            </div>
+              <img className="timage" src="/img/video_slider1_16.jpeg" alt="" />
+            </div> */}
           </div>
         </div>
       </div>

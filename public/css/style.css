@@ -604,8 +604,8 @@ header .intro-text {
   }
 
   /* Right Images Section */
-
-  .fimage,
+  /* if need column of cards */
+  /* .fimage,
   .simage,
   .timage {
     height: 256px;
@@ -615,15 +615,40 @@ header .intro-text {
     margin-left: 0px;
     margin-top: 20px;
     object-fit: cover;
-  }
+  } */
 
-  .imgm {
-    /* background-color: red; */
+  /* .imgm {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* gap: 20px; */
-    /* justify-content: space-between; */
+    
+  } */
+
+  /* new update (cards scroll)*/
+  .img-sec {
+    /* background-color: red; */
+    margin-top: 40px;
+  }
+  .mobile-swiper {
+    /* background-color: green; */
+    width: 100%;
+    height: fit-content;
+  }
+  .swiperslides2 {
+    /* background-color: red; */
+    width: auto;
+    /* height: 20px; */
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .swiper-image {
+    height: 256px;
+    width: auto;
+    /* margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 20px; */
+    border-radius: 10px;
+    object-fit: cover;
   }
   /* .col-md-6 img {
     height: auto;
