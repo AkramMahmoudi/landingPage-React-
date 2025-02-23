@@ -1068,7 +1068,8 @@ header .intro-text {
 }
 /* Team Section */
 #team {
-  padding: 100px 0;
+  /* background-color: red; */
+  padding: 10px 0px;
 }
 #team h4 {
   margin: 5px 0;
@@ -1085,6 +1086,94 @@ header .intro-text {
   color: #888;
 }
 /* Contact Section */
+/* new version */
+/* ContactUs.css */
+
+/* تنسيق الحاوية الأساسية */
+.contact-container {
+  /* background-color: green; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0px auto;
+  padding: 20px;
+  gap: 40px;
+}
+
+/* تنسيق القسم الأيسر (نموذج الاتصال) */
+.contact-form-container {
+  flex: 1;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيق المدخلات */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #1d1c1c;
+}
+
+/* زر الإرسال */
+.contact-form button {
+  width: 100%;
+  background-color: #5ca9fb; /* استبدلها بلون الثيم الخاص بك */
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #238dfd; /* لون أغمق عند التحويم */
+}
+
+/* تنسيق القسم الأيمن (المعلومات) */
+.contact-info {
+  flex: 1;
+}
+
+.contact-info h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact-info hr {
+  width: 60px;
+  height: 3px;
+  background-color: #5ca9fb; /* لون الثيم */
+  border: none;
+  margin-bottom: 20px;
+}
+
+/* تنسيق النصوص */
+.contact-info h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+/* old version */
 #contact {
   padding: 100px 0 60px;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
