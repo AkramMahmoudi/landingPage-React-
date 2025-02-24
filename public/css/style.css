@@ -858,19 +858,59 @@ header .intro-text {
 }
 
 .more-btn:hover {
-  background: #c0392b;
+  background: #005bbd;
 }
 
 /* Responsive */
-@media (max-width: 992px) {
-  .story-content {
-    flex-direction: column;
-    text-align: center;
+@media (max-width: 768px) {
+  .our-story {
+    padding: 0px;
+    /* background-color: #f00707; */
   }
 
-  .story-images,
-  .story-text {
+  .story-content {
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: space-between; */
+    gap: 40px;
+  }
+  .story-images {
+    /* background-color: green; */
+    /* color: #000; */
+  }
+  .second-sec {
+    position: absolute;
+    bottom: -50%;
+    left: 0%;
     max-width: 100%;
+    /* z-index: 2; */
+    /* margin-bottom: 150px; */
+    /* position: absolute; */
+    /* background-color: red; */
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    gap: 30px;
+    z-index: 2; /* Ensures it stays above the image */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
+  }
+  .story-text {
+    margin: 100px auto;
+    width: 100%;
+  }
+  .story-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #000;
   }
 
   .sub-image {
@@ -880,6 +920,16 @@ header .intro-text {
 
   .experience-badge {
     right: 10%;
+  }
+  .feature {
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .feature h4 {
+    /* background-color: #000; */
   }
 }
 
@@ -930,6 +980,14 @@ header .intro-text {
   line-height: 24px;
   margin: 30px 0;
 }
+/* Responsive */
+@media (max-width: 768px) {
+  #about {
+    /* background-color: green; */
+    padding: 0px 0px 10px 0px;
+  }
+}
+
 /* section3 */
 /* Container */
 #Section3 {
@@ -1058,7 +1116,7 @@ header .intro-text {
   }
   .container3 {
     /* background-color: red; */
-    margin: 0;
+    margin: 30px 0px;
     padding: 0px 16px;
     max-width: 1280px;
   }
