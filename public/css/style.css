@@ -1395,6 +1395,34 @@ header .intro-text {
   margin-top: 5px;
 }
 
+@media (max-width: 768px) {
+  .stats-section {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 0;
+  }
+  .stats-card h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #222;
+  }
+
+  .stats-card h2 span {
+    color: #007bff;
+    font-size: 36px;
+  }
+
+  .stats-card p {
+    font-size: 18px;
+    color: #3a3a3a;
+    margin-top: 5px;
+  }
+}
+
 /*  */
 /* Contact Section */
 /* new version */
