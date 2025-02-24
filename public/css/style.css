@@ -702,7 +702,7 @@ header .intro-text {
   height: 100%;
   /* background-color: green; */
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 40px;
 }
@@ -768,8 +768,9 @@ header .intro-text {
   /* position: absolute; */
   /* bottom: 35%;
   right: 50px; */
+  color: #000;
   background: #fff;
-  /* padding: 15px 25px; */
+  padding: 15px 25px;
   border-radius: 15px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   /* text-align: center;
@@ -777,34 +778,42 @@ header .intro-text {
   font-size: 18px;
   font-weight: bold;
   margin-left: 10px;
+  text-align: center;
 }
-
+.experience-badge .shake-icon {
+  /* background-color: #f10303; */
+}
 .experience-badge .number {
-  font-size: 32px;
+  /* background-color: #000; */
+  font-size: 30px;
   font-weight: bold;
-  color: #e44d26; /* Theme color */
+  color: #007bff;
 }
 
 .experience-badge p {
   margin: 0;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 /* Right Side - Text Content */
 .story-text {
+  /* background-color: green; */
+  /* margin-top: 50px; */
   max-width: 50%;
 }
 
 .story-subtitle {
-  color: #e44d26;
+  /* margin-top: 50px; */
+  color: #007bff;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .story-title {
-  font-size: 32px;
+  font-size: 48px;
   font-weight: bold;
   margin: 10px 0;
+  color: #000;
 }
 
 .story-description {
@@ -830,7 +839,7 @@ header .intro-text {
   background: #000;
   color: #fff;
   padding: 10px;
-  border-radius: 50%;
+  border-radius: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -838,7 +847,7 @@ header .intro-text {
 }
 
 .more-btn {
-  background: #e44d26;
+  background: #007bff;
   color: #fff;
   border: none;
   padding: 12px 20px;
