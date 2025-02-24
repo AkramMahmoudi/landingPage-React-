@@ -16,6 +16,7 @@ import { Section3 } from "./section3";
 import Footer from "./footer";
 import ContactUs from "./contactus";
 import { OurStory } from "./ourStory";
+import StatsSection from "./statssection";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -36,6 +37,7 @@ const Home = () => {
       <Services2 />
       <Section3 />
       <OurStory />
+      <StatsSection />
       <About data={landingPageData.About} />
       <Services data={landingPageData.Services} />
       <Gallery data={landingPageData.Gallery} />
