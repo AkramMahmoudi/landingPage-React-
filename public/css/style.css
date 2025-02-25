@@ -106,6 +106,7 @@ hr {
   transition: color 0.3s ease;
 }
 #menu.navbar-default.scrolled .navbar-nav > li > a {
+  /* background-color: red; */
   color: #555; /* Original color */
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
@@ -144,14 +145,28 @@ hr {
   transition: width 0.2s !important;
 }
 .navbar-toggle {
-  border-radius: 0;
+  border-radius: 5px;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+  /* border-color: #19191a; */
+}
+.navbar-default .navbar-toggle > .icon-bar {
+  background-color: #fff;
+}
+.navbar-default.scrolled .navbar-toggle > .icon-bar {
+  background-color: #608dfd;
+}
+.navbar-default .navbar-toggle:hover > .icon-bar {
+  background-color: #fff;
+}
+.navbar-default.scrolled .navbar-toggle:hover,
+.navbar-default.scrolled .navbar-toggle:focus {
   background-color: #fff;
   border-color: #608dfd;
 }
-.navbar-default .navbar-toggle:hover > .icon-bar {
+.navbar-default.scrolled .navbar-toggle:hover > .icon-bar {
   background-color: #608dfd;
 }
 .section-title {
