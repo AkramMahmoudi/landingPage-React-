@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, EffectFade, Autoplay } from "swiper/modules";
 import { motion } from "framer-motion";
@@ -8,9 +8,19 @@ import "swiper/css/effect-fade";
 import { RainEffect } from "./raineffect";
 
 export const Header = ({ data }) => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  // const textVariants = {
+  //   hidden: { opacity: 0, y: 30 },
+  //   visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+  // };
+  // Animation variants for h1 and p
   const textVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 1, ease: "easeOut" },
+    },
   };
 
   // const buttonVariants = {
@@ -25,6 +35,7 @@ export const Header = ({ data }) => {
         pagination={{ clickable: true }}
         effect="fade"
         autoplay={{ delay: 3000, disableOnInteraction: false }}
+        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
         className="header-slider"
       >
         {data?.map((slide, index) => (
@@ -47,6 +58,7 @@ export const Header = ({ data }) => {
                   <div className="row">
                     <div className="col-md-8 col-md-offset-2 intro-text">
                       <motion.h1
+                        key={activeIndex}
                         initial="hidden"
                         animate="visible"
                         variants={textVariants}
@@ -55,6 +67,7 @@ export const Header = ({ data }) => {
                         <span></span>
                       </motion.h1>
                       <motion.p
+                        key={`p-${activeIndex}`}
                         initial="hidden"
                         animate="visible"
                         variants={textVariants}
@@ -62,6 +75,7 @@ export const Header = ({ data }) => {
                       >
                         {slide?.paragraph || "Loading"}
                       </motion.p>
+
                       {/* <motion.a
                         href="#features"
                         className="btn btn-custom btn-lg page-scroll"
