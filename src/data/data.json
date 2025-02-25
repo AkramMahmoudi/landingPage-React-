@@ -1,13 +1,21 @@
 {
-  "Header": {
-    "title": "SUD ETANCHE",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum.",
-    "images": [
-      "/img/etancheite-toit-terrasse-rouleaux-bitumineux.jpg",
-      "/img/slide_sud_etanche_3.jpg",
-      "/img/video_slider1_16.jpeg"
-    ]
-  },
+  "Header": [
+    {
+      "title": "Sarl Etanche",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "images": "/img/etancheite-toit-terrasse-rouleaux-bitumineux.jpg"
+    },
+    {
+      "title": "Title 2",
+      "paragraph": "p2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      "images": "/img/slide_sud_etanche_3.jpg"
+    },
+    {
+      "title": "Title 3",
+      "paragraph": "p3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      "images": "/img/video_slider1_16.jpeg"
+    }
+  ],
   "About": {
     "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "Why": [

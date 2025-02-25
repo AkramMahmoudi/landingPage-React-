@@ -27,13 +27,13 @@ export const Header = ({ data }) => {
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         className="header-slider"
       >
-        {data?.images?.map((img, index) => (
+        {data?.map((slide, index) => (
           <SwiperSlide key={index}>
             <div
               className="intro"
               style={{
                 position: "relative", //new style
-                backgroundImage: `url(${img})`,
+                backgroundImage: `url(${slide.images})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 height: "100vh",
@@ -51,7 +51,7 @@ export const Header = ({ data }) => {
                         animate="visible"
                         variants={textVariants}
                       >
-                        {data?.title || "Loading"}
+                        {slide?.title || "Loading"}
                         <span></span>
                       </motion.h1>
                       <motion.p
@@ -60,7 +60,7 @@ export const Header = ({ data }) => {
                         variants={textVariants}
                         transition={{ delay: 0.5 }}
                       >
-                        {data?.paragraph || "Loading"}
+                        {slide?.paragraph || "Loading"}
                       </motion.p>
                       {/* <motion.a
                         href="#features"
