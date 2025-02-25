@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { motion } from "framer-motion";
 
 import "swiper/css";
 // import "swiper/css/scrollbar";
@@ -17,18 +18,39 @@ export const Services2 = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  // Framer Motion Variants
+  const fadeIn = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+  };
+
+  const imageVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 1, delay: 0.5 } },
+  };
+
   return (
     <div id="Services2">
       <div className="container">
         <div className="row">
           {/* القسم الأيسر للنصوص */}
-          <div className="col-md-6">
-            <h3 className="text-primary">Why Choose Us</h3>
-            <h2 className="font-weight-bold">
+          <motion.div
+            className="col-md-6"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            <motion.h3 className="text-primary" variants={fadeIn}>
+              Why Choose Us
+            </motion.h3>
+            <motion.h2 className="font-weight-bold" variants={fadeIn}>
               Experience construction done right.
-            </h2>
-            <p
+            </motion.h2>
+            <motion.p
               className="text-muted"
+              variants={fadeIn}
+              transition={{ delay: 0.2 }}
               style={{
                 fontSize: "16px", // Adjust font size for readability
                 lineHeight: "1", // Add spacing between lines
@@ -39,10 +61,17 @@ export const Services2 = () => {
               Sociosqu massa semper vivamus fusce luctus porta purus nunc
               consectetur. Mollis sollicitudin erat dui luctus aenean ex
               vehicula. Risus habitant leo turpis sit vehicula.
-            </p>
+            </motion.p>
 
             <ul className="list-unstyled">
-              <li className="media mb-3">
+              <motion.li
+                className="media mb-3"
+                variants={fadeIn}
+                transition={{ delay: 0.3 }}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+              >
                 <div className="media-left">
                   <span
                     className="text-primary"
@@ -69,7 +98,7 @@ export const Services2 = () => {
                 >
                   Time savings through effective project management
                 </div>
-              </li>
+              </motion.li>
               <li className="media mb-3">
                 <div className="media-left">
                   <span
@@ -128,7 +157,11 @@ export const Services2 = () => {
               </li>
             </ul>
             {/*  */}
-            <div className="container2">
+            <motion.div
+              className="container2"
+              variants={fadeIn}
+              transition={{ delay: 0.8 }}
+            >
               <div className="flex-container">
                 <button className="button">More About Us</button>
                 <div className="icon-text-container">
@@ -148,8 +181,8 @@ export const Services2 = () => {
                   <span className="text">(123) 456 7890</span>
                 </div>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
           {/* القسم الأيمن للصور */}
           <div className="col-md-6 img-sec">
@@ -167,43 +200,67 @@ export const Services2 = () => {
                 className="mobile-swiper"
               >
                 <SwiperSlide className="swiperslides2">
-                  <img
+                  <motion.img
                     className="swiper-image"
                     src="/img/slide_sud_etanche_3.jpg"
                     alt=""
+                    variants={imageVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
                   />
                 </SwiperSlide>
                 <SwiperSlide className="swiperslides2">
-                  <img
+                  <motion.img
                     className="swiper-image"
                     src="/img/etancheite-toit-terrasse-rouleaux-bitumineux.jpg"
                     alt=""
+                    variants={imageVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
                   />
                 </SwiperSlide>
                 <SwiperSlide className="swiperslides2">
-                  <img
+                  <motion.img
                     className="swiper-image"
                     src="/img/video_slider1_16.jpeg"
                     alt=""
+                    variants={imageVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
                   />
                 </SwiperSlide>
               </Swiper>
             ) : (
               <div className="d-flex justify-content-between align-items-end imgm">
-                <img
+                <motion.img
                   className="fimage"
                   src="/img/slide_sud_etanche_3.jpg"
                   alt=""
+                  variants={imageVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
                 />
-                <img
+                <motion.img
                   className="simage"
                   src="/img/etancheite-toit-terrasse-rouleaux-bitumineux.jpg"
                   alt=""
+                  variants={imageVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
                 />
-                <img
+                <motion.img
                   className="timage"
                   src="/img/video_slider1_16.jpeg"
                   alt=""
+                  variants={imageVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
                 />
               </div>
             )}
