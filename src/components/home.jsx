@@ -3,7 +3,7 @@ import { Navigation } from "./navigation";
 import { Header } from "./header";
 import { Features } from "./features";
 import { About } from "./about";
-import { Services } from "./services";
+// import { Services } from "./services";
 import { Gallery } from "./gallery";
 import { Testimonials } from "./testimonials";
 import { Team } from "./Team";
@@ -39,7 +39,7 @@ const Home = () => {
       <OurStory />
       <StatsSection />
       <About data={landingPageData.About} />
-      <Services data={landingPageData.Services} />
+      {/* <Services data={landingPageData.Services} /> */}
       <Gallery data={landingPageData.Gallery} />
       <Testimonials data={landingPageData.Testimonials} />
       <Team data={landingPageData.Team} />

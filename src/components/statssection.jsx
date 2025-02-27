@@ -3,6 +3,7 @@ import React from "react";
 import StatsCard from "./statscard";
 import { FaFileAlt, FaAward, FaProjectDiagram, FaUsers } from "react-icons/fa";
 // import "./StatsSection.css";
+import { motion } from "framer-motion";
 
 const StatsSection = () => {
   const stats = [
@@ -19,13 +20,16 @@ const StatsSection = () => {
 
   return (
     <div className="stats-section">
-      {stats.map((stat) => (
-        <StatsCard
+      {stats.map((stat, index) => (
+        <motion.div
           key={stat.id}
-          icon={stat.icon}
-          number={stat.number}
-          label={stat.label}
-        />
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: index * 0.2 }}
+          viewport={{ once: true }}
+        >
+          <StatsCard icon={stat.icon} number={stat.number} label={stat.label} />
+        </motion.div>
       ))}
     </div>
   );

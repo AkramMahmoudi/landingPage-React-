@@ -19,6 +19,7 @@ const cardVariants = {
     transition: { duration: 0.5, delay: index * 0.2 },
   }),
 };
+
 const hoverEffect = {
   scale: 1.05,
   transition: { duration: 0.3 },
