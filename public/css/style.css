@@ -344,7 +344,7 @@ header .intro-text {
   display: block;
   width: 60px; /* عرض الشريط */
   height: 4px; /* ارتفاع الشريط */
-  background-color: #5ca9fb;
+  background-color: #1b61bd;
   margin: 10px 0px 0px -30px; /* توسيط الشريط */
   border-radius: 2px;
 }
@@ -367,7 +367,7 @@ header .intro-text {
 
 .feature-card i {
   font-size: 40px;
-  color: #5ca9fb;
+  color: #1b61bd;
   margin-bottom: 15px;
 }
 
@@ -529,8 +529,8 @@ header .intro-text {
   font-weight: bold;
   padding: 10px 20px;
   border-radius: 5px;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #1b61bd;
+  border-color: #1b61bd;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -546,7 +546,7 @@ header .intro-text {
 }
 .icon {
   font-size: 18px;
-  color: #007bff;
+  color: #1b61bd;
   margin-right: 10px;
 }
 
@@ -802,7 +802,7 @@ header .intro-text {
   /* background-color: #000; */
   font-size: 30px;
   font-weight: bold;
-  color: #007bff;
+  color: #1b61bd;
 }
 
 .experience-badge p {
@@ -819,7 +819,7 @@ header .intro-text {
 
 .story-subtitle {
   /* margin-top: 50px; */
-  color: #007bff;
+  color: #1b61bd;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -862,7 +862,7 @@ header .intro-text {
 }
 
 .more-btn {
-  background: #007bff;
+  background: #1b61bd;
   color: #fff;
   border: none;
   padding: 12px 20px;
@@ -1032,12 +1032,12 @@ header .intro-text {
 }
 
 .highlight {
-  color: #007bff; /* Orange 500 */
+  color: #1b61bd; /* Orange 500 */
 }
 
 /* Button */
 .button3 {
-  background-color: #007bff; /* Orange 500 */
+  background-color: #1b61bd; /* Orange 500 */
   color: #fff;
   padding: 8px 24px;
   border-radius: 4px;
@@ -1049,7 +1049,7 @@ header .intro-text {
 }
 
 .button3:hover {
-  background-color: #007bff; /* Orange 600 */
+  background-color: #1b61bd; /* Orange 600 */
 }
 
 /* Grid Layout */
@@ -1121,7 +1121,7 @@ header .intro-text {
 }
 
 .card3:hover .card-title {
-  color: #007bff; /* Change title color on hover */
+  color: #1b61bd; /* Change title color on hover */
 }
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
@@ -1390,7 +1390,7 @@ header .intro-text {
 
 .StatsCard-icon {
   font-size: 40px;
-  color: #007bff;
+  color: #1b61bd;
   margin-bottom: 10px;
 }
 .stats-card h2 {
@@ -1400,12 +1400,12 @@ header .intro-text {
 }
 
 .stats-card h2 span {
-  color: #007bff;
+  color: #1b61bd;
   font-size: 36px;
 }
 .stats-card h2 span.plus {
-  color: #007bff;
-  font-size: 28px;
+  color: #1b61bd;
+  font-size: 30px;
 }
 
 .stats-card p {
@@ -1431,7 +1431,7 @@ header .intro-text {
   }
 
   .stats-card h2 span {
-    color: #007bff;
+    color: #1b61bd;
     font-size: 36px;
   }
 
@@ -1482,7 +1482,7 @@ header .intro-text {
 /* زر الإرسال */
 .contact-form button {
   width: 100%;
-  background-color: #007bff; /* استبدلها بلون الثيم الخاص بك */
+  background-color: #1b61bd; /* استبدلها بلون الثيم الخاص بك */
   color: white;
   border: none;
   padding: 12px;
@@ -1515,7 +1515,7 @@ header .intro-text {
 .contact-info hr {
   width: 60px;
   height: 3px;
-  background-color: #007bff; /* لون الثيم */
+  background-color: #1b61bd; /* لون الثيم */
   border: none;
   margin-bottom: 20px;
 }
@@ -1756,7 +1756,7 @@ label {
 
 .footer-section h3 {
   margin-bottom: 15px;
-  color: #007bff;
+  color: #1b61bd;
   font-size: 18px;
 }
 
@@ -1807,7 +1807,7 @@ label {
 
 .newsletter-button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #1b61bd;
   color: #ffffff;
   border: none;
   border-radius: 0 5px 5px 0;
