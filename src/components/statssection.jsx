@@ -28,7 +28,12 @@ const StatsSection = () => {
           transition={{ duration: 0.6, delay: index * 0.2 }}
           viewport={{ once: true }}
         >
-          <StatsCard icon={stat.icon} number={stat.number} label={stat.label} />
+          <StatsCard
+            key={stat.id}
+            icon={stat.icon}
+            number={stat.number}
+            label={stat.label}
+          />
         </motion.div>
       ))}
     </div>
