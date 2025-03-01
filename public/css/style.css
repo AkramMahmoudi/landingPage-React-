@@ -1403,6 +1403,10 @@ header .intro-text {
   color: #007bff;
   font-size: 36px;
 }
+.stats-card h2 span.plus {
+  color: #007bff;
+  font-size: 28px;
+}
 
 .stats-card p {
   font-size: 16px;

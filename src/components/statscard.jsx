@@ -11,8 +11,6 @@ import {
 
 const StatsCard = ({ icon, number, label }) => {
   const count = useMotionValue(0);
-  // const [count, setCount] = useState(0);
-
   const springCount = useSpring(count, { stiffness: 60, damping: 25 });
   const roundedCount = useTransform(springCount, (latest) =>
     Math.round(latest)
@@ -29,9 +27,8 @@ const StatsCard = ({ icon, number, label }) => {
     <div ref={ref} className="stats-card">
       <div className="StatsCard-icon">{icon}</div>
       <h2>
-        {console.log(roundedCount)}
         <motion.span>{roundedCount}</motion.span>
-        <span>+</span>
+        <span className="plus">+</span>
       </h2>
       <p>{label}</p>
     </div>

@@ -1,7 +1,26 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useEffect } from "react";
+import {
+  motion,
+  useSpring,
+  useMotionValue,
+  useTransform,
+  useInView,
+} from "framer-motion";
 
 export const OurStory = () => {
+  const count = useMotionValue(0);
+  const springCount = useSpring(count, { stiffness: 60, damping: 25 });
+  const roundedCount = useTransform(springCount, (latest) =>
+    Math.round(latest)
+  );
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-50px" });
+
+  useEffect(() => {
+    if (isInView) {
+      count.set(45);
+    }
+  }, [isInView, count]);
   return (
     <section className="our-story">
       <motion.div
@@ -68,11 +87,14 @@ export const OurStory = () => {
                   </svg>
                 </motion.div>
                 <motion.span
+                  ref={ref}
                   className="number"
                   whileInView={{ scale: [1, 1.2, 1] }}
                   transition={{ repeat: Infinity, duration: 1 }}
                 >
-                  45+
+                  {/* 45+ */}
+                  <motion.span>{roundedCount}</motion.span>
+                  <span>+</span>
                 </motion.span>
                 <p>Experience of work</p>
               </motion.div>
